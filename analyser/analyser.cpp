@@ -1048,7 +1048,7 @@ namespace miniplc0 {
 		return -1;
 	}
 	//压入对应的指令，如果是全局状态直接压入_instruction,如果是局部状态则压入当前函数的最后一条指令
-	bool Analyser::addInstruction(Instruction& instruction) 
+	bool Analyser::addInstruction(Instruction instruction) 
 	{
 		if (isGlobal)
 			_instructions.push_back(instruction);

@@ -136,7 +136,7 @@ namespace miniplc0 {
 		//查找标识符所在的层级，如果是局部变量则返回1，全局变量则返回0，没有找到则返回-1
 		int32_t getLevel(Token& tk);
 		//压入对应的指令，如果是全局状态直接压入_instruction,如果是局部状态则压入当前函数的最后一条指令
-		bool addInstruction(Instruction& instruction);
+		bool addInstruction(Instruction instruction);
 		//给变量赋值
 		bool assign(Token& tk);
 		//判断符号是不是常量
